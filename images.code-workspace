@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "../images"
+		},
+		{
+			"name": "youtube.html",
+			"path": "../youtube.html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "youtube.html"
+	}
+}

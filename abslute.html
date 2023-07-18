@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>abslute and relative</title>
+    <style>
+      .x {
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        background-color: black;
+        color: white;
+        font-size: 23px;
+        padding: 8px 17px;
+        font-family: arial;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .fixed {
+        right: 20px;
+        position: fixed;
+        bottom: 20px;
+        width: 320px;
+        height: 180px;
+        background-color: gray;
+      }
+      .time {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+      }
+
+      .container {
+        width: 250px;
+        height: 250px;
+        border: none;
+        box-shadow: 0px 0px 9px gray;
+      }
+      .pixbx {
+        width: 230px;
+        height: 230px;
+        position: relative;
+      }
+      .pix {
+        width: 230px;
+        height: 230px;
+        position: relative;
+      }
+
+      .ff {
+        top: 5px;
+        right: 2px;
+        position: absolute;
+        color: white;
+        background-color: black;
+        padding: 2px 3px;
+        font-size: 15px;
+      }
+      .bx2 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        height: 80px;
+        background-color: rgba(248, 246, 246, 0.7);
+      }
+
+      .cart {
+        position: absolute;
+        top: 25px;
+        bottom: 25px;
+        left: 65px;
+        right: 15px;
+      }
+
+      .add {
+        font-size: 15px;
+        background-color: antiquewhite;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed">
+      <div class="x">X</div>
+      <div class="time">0:29</div>
+    </div>
+
+    <div class="container">
+      <div class="pixbx">
+        <img class="pix" src="/cl 2.jpeg" />
+        <div class="ff">20% OFF</div>
+        <div class="bx2">
+          <div class="cart"><button class="add">Add to Cart</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise</title>
+    <style>
+      .A,
+      .B {
+        width: 6cm;
+        height: 30px;
+        border-radius: 5px;
+        border-style: outset;
+        color: rgb(193, 185, 185);
+        margin-bottom: -6px;
+        border-width: 1pt;
+        border-color: rgb(173, 164, 164);
+        font-size: 20px;
+      }
+      .C {
+        display: inline-block;
+        width: 10cm;
+        font-size: 28px;
+        font-family: arial;
+        vertical-align: middle;
+      }
+
+      .D {
+        vertical-align: middle;
+        height: 39px;
+        width: 69px;
+        border-radius: 4px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(241, 231, 231);
+        border-width: 1px;
+        font-size: 20px;
+        font-weight: 550;
+        cursor: pointer;
+      }
+      .D:hover {
+        background-color: rgb(121, 117, 117);
+      }
+      .Search-B {
+        width: 20cm;
+        height: 1.6cm;
+        font-size: 23px;
+        border-style: none;
+        border-radius: 25px;
+        box-shadow: 0.2px 0.2px 10px 0.1px rgb(143, 134, 134);
+        padding-left: 1cm;
+        margin-left: 8cm;
+      }
+      .img {
+        width: 350px;
+        margin-left: 500px;
+        margin-bottom: -40px;
+      }
+      .E,
+      .F {
+        width: 5.5cm;
+        height: 1.4cm;
+        border-radius: 10px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(86, 86, 86);
+        border-color: rgb(200, 200, 200);
+        font-family: verdana;
+      }
+      .G {
+        width: 11.5cm;
+        height: 1.4cm;
+        border-radius: 10px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(200, 200, 200);
+        border-color: rgb(166, 163, 163);
+        font-family: verdana;
+      }
+      .H {
+        width: 12cm;
+        height: 1.4cm;
+        border-radius: 10px;
+        font-size: 30px;
+        color: white;
+        background-color: rgb(67, 116, 190);
+        border-style: none;
+        cursor: pointer;
+      }
+      .I {
+        font-size: 48px;
+        font-family: arial;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      .J {
+        width: 11cm;
+        height: 1.5cm;
+        border-style: none;
+        font-size: 17px;
+        background-color: rgb(214, 207, 207);
+        padding-left: 20px;
+        color: black;
+      }
+      .K {
+        width: 4.4cm;
+        height: 1.3cm;
+        border-style: none;
+        font-size: 17px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+
+      .L {
+        width: 4.9cm;
+        height: 1.3cm;
+        border-style: none;
+        font-size: 17px;
+        background-color: rgb(228, 217, 217);
+        margin-left: 20px;
+        color: black;
+        font-family: arial;
+        cursor: pointer;
+        font-weight: 550;
+      }
+
+      .DA {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: inline-block;
+      }
+      .DB {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: inline-block;
+        background-color: green;
+        margin-left: 30px;
+      }
+
+      .DC {
+        display: inline-block;
+        margin: 40px;
+        vertical-align: top;
+        width: 430px;
+        height: 150px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(180, 170, 170);
+      }
+
+      .DE {
+        font-size: 20px;
+        padding: 9px 20px;
+        font-family: verdana;
+        font-weight: 550;
+      }
+
+      .DD {
+        font-size: 20px;
+        font-family: verdana;
+        width: 58px;
+        height: 31px;
+        color: black;
+        background-color: rgb(229, 222, 222);
+        border: solid 1px rgb(142, 135, 135);
+        border-radius: 3px;
+        transition: 1s;
+      }
+
+      .DD:hover {
+        color: rgb(182, 168, 168);
+        background-color: rgb(106, 68, 68);
+      }
+
+      .Z {
+        width: 530px;
+        height: 130px;
+        border-style: none;
+        background-color: rgb(65, 60, 60);
+        padding: 5px 25px;
+        border-radius: 0px;
+        padding-bottom: 40px;
+      }
+
+      .EA {
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+      }
+      .EB {
+        font-size: 20px;
+        color: rgb(206, 197, 197);
+      }
+
+      .imgg {
+        width: 70px;
+        height: 70px;
+        border-radius: 80px;
+        object-fit: cover;
+        object-position: left;
+        vertical-align: middle;
+      }
+      .BZ {
+        font-size: 20px;
+        width: 9cm;
+        height: 1cm;
+        border-style: none;
+        vertical-align: middle;
+        font-family: verdana;
+        margin-left: 10px;
+        outline-style: none;
+      }
+      .CY {
+        width: 100px;
+        height: 45px;
+        color: rgb(236, 233, 233);
+        background-color: rgb(53, 104, 242);
+        border-radius: 30px;
+        font-size: 20px;
+        border-style: none;
+        vertical-align: middle;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .T {
+        color: white;
+        text-decoration: none;
+      }
+
+      .Q {
+        height: 2.1cm;
+        width: 15cm;
+        box-shadow: 1px 1px 10px 1px;
+        padding-top: 10px;
+        padding-left: 20px;
+        border-radius: 7px;
+      }
+
+      .v {
+        width: 200px;
+        box-shadow: 0.1px 0.1px 5px 1px rgb(90, 90, 102);
+        font-family: verdana;
+        line-height: 10px;
+        margin-left: 10px;
+        display: inline-block;
+        font-family: arial;
+      }
+
+      .va {
+        width: 200px;
+        height: 230px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .vc {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+
+      .vd {
+        font-size: 16px;
+        color: rgb(120, 117, 114);
+        padding-left: 10px;
+      }
+
+      .ve {
+        width: 125px;
+        height: 39px;
+        margin-left: 10px;
+        background-color: rgb(24, 119, 242);
+        border: none;
+        color: white;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <input class="A" type="text" placeholder="Name" />
+    </p>
+    <p>
+      <input class="B" type="text" placeholder="Email" />
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="C">
+      Thanks for chatting with our customer support, Would you like to take our
+      quick survey?
+    </p>
+    <button class="D">Yes</button>
+    <button class="D">No</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <img class="img" src="/youtube.html/Google-logo.png" />
+    <p>
+      <input
+        class="Search-B"
+        type="text"
+        placeholder="Search Google or type a URL"
+      />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <input class="E" type="text" placeholder="First name" />
+      <input class="F" type="text" placeholder="Surname" />
+    </p>
+
+    <p>
+      <input class="G" type="text" placeholder="Email" />
+    </p>
+    <button class="H">Sign up</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="I">Request a ride now</p>
+    <p>
+      <input class="J" type="text" placeholder="Enter pick up location" />
+    </p>
+    <p>
+      <input class="J" type="text" placeholder="Enter destination" />
+    </p>
+    <br />
+    <button class="K">Request now</button>
+    <button class="L">Schedule for later</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="DA"></div>
+
+    <div class="DB"></div>
+
+    <div class="DC">
+      <p class="DE">Satisfied with our service?</p>
+      <p>
+        <button class="DD" style="margin-left: 20px">Yes</button>
+        <button class="DD">No</button>
+      </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="Z">
+      <p class="EA">Install YouTube Music</p>
+      <p class="EB">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="Q">
+      <img class="imgg" src="/images/thumbnail-1.webp" />
+      <input class="BZ" type="text" placeholder="what's happening?" />
+      <button class="CY">
+        <a class="T" href="www.twitter.com">Tweet</a>
+      </button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="v">
+      <img class="va" src="/images/thumbnail-2.webp" alt="trial" />
+      <p class="vc">Jimmy</p>
+      <p class="vd">22 Mutual friends</p>
+      <p>
+        <button class="ve">Add friend</button>
+      </p>
+    </div>
+    <div class="v">
+      <img class="va" src="/images/thumbnail-1.webp" alt="trial" />
+      <p class="vc">Olivia</p>
+      <p class="vd">2 Mutual friends</p>
+      <p>
+        <button class="ve">Add friend</button>
+      </p>
+    </div>
+    <div class="v">
+      <img class="va" src="/images/placard 2.jpeg" alt="trial" />
+      <p class="vc">Wendy</p>
+      <p class="vd">12 Mutual friends</p>
+      <p>
+        <button class="ve">Add friend</button>
+      </p>
+    </div>
+  </body>
+</html>

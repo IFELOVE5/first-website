@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex exercise</title>
+    <style>
+      .cntainer {
+        width: 650px;
+        height: 280px;
+        border: 1px solid rgb(193, 185, 185);
+      }
+      .bxa {
+        display: flex;
+        flex-direction: row;
+      }
+      .pixbx {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 100px;
+      }
+
+      .pix {
+        width: 90px;
+        height: 90px;
+        border-radius: 60px;
+        object-fit: cover;
+        object-position: left;
+      }
+      .textbx {
+        width: 450px;
+        margin-top: 18px;
+      }
+      .texta {
+        font-size: 21px;
+        font-family: arial;
+        font-weight: bold;
+      }
+      .textb {
+        color: #9f9898;
+        font-weight: 400;
+      }
+
+      .textc {
+        font-size: 23px;
+        margin-top: 5px;
+      }
+
+      .bxb {
+        width: 500px;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        border: 0px solid rgb(173, 166, 166);
+        box-shadow: 0px 0px 2px gray;
+        margin-left: 100px;
+        margin-top: 20px;
+        border-radius: 30px;
+      }
+      .bxc {
+        height: 140px;
+        width: 130px;
+        background-color: rgb(171, 165, 165);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .textd {
+        font-size: 22px;
+        flex: 1;
+        color: gray;
+        padding-left: 15px;
+        font-family: arial;
+        padding-top: 20px;
+      }
+      .texte {
+        color: #000;
+        font-size: 23px;
+        flex: 1;
+        padding-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cntainer">
+      <div class="bxa">
+        <div class="pixbx">
+          <img class="pix" src="/IMG-20181121-WA0063.jpg" />
+        </div>
+        <div class="textbx">
+          <div class="texta">
+            Supersimple.dev<span class="textb"> @SuperSimpleDev </span>
+          </div>
+          <div class="textc">
+            what is backend web development? A complete overview. New video is
+            up!
+          </div>
+        </div>
+      </div>
+      <div class="bxb">
+        <div class="bxc"></div>
+        <div class="textd">
+          youtube.com
+          <div class="texte">
+            Backend web development- a complete overview (2021)
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

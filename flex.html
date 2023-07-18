@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>flex</title>
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 30px;
+        height: 50px;
+      }
+      .flexx {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        height: 50px;
+      }
+
+      .fflex {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        margin-top: 30px;
+        font-size: 30px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid gray;
+      }
+      .test {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .F {
+        border: 1px solid gray;
+        border-radius: 20px;
+        width: 400px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+        padding-top: 0px;
+        padding-left: 20px;
+      }
+      .name {
+        font-size: 25px;
+      }
+
+      .button {
+        background-color: blue;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      .I {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(107, 9, 167);
+        border: 1px solid rgb(107, 9, 163);
+        margin-bottom: 100px;
+      }
+      .hme {
+        color: white;
+        font-size: 20px;
+        padding-left: 10px;
+        width: 10px;
+      }
+      .search {
+        width: 700px;
+        height: 38px;
+        border-radius: 60px;
+        border: none;
+        font-size: 17px;
+        padding-left: 20px;
+      }
+      .buttn {
+        width: 110px;
+        height: 40px;
+        font-size: 17px;
+        color: white;
+        background-color: rgb(107, 9, 167);
+        border: 1px solid white;
+        margin-right: 20px;
+      }
+
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .whle {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        width: 500px;
+
+        align-items: center;
+      }
+      .pix {
+        width: 80px;
+        height: 80px;
+        object-position: right;
+        object-fit: cover;
+        border-radius: 70px;
+      }
+      .main {
+        font-size: 20px;
+        color: rgb(82, 79, 79);
+        line-height: 30px;
+        width: 200px;
+        padding-left: 20px;
+      }
+      .fllw {
+        width: 160px;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(54, 141, 212);
+        height: 42px;
+        border: none;
+        margin-left: 200px;
+      }
+
+      .ex{
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        
+      }
+      .Fa{
+        background-color: lightpink;
+        width: 100px;
+        width: 70px;
+        align-items: center;
+        display: flex;
+        justify-content: center;  
+      }
+      .Fb{
+        background-color: lightblue;
+        width: 200px;
+        height: 70px;
+        
+      }
+      .fc{
+        background-color: #000;
+        color: white;
+        width: 45px;
+        height: 20px;    
+       
+      }
+      .exx{
+        display: flex;
+        flex-direction: row;
+      }
+      .fd{
+        width: 100px;
+        background-color: lightpink;
+        height: 70px;
+      }
+      .Fe{
+        width: 200px;
+        height: 70px;
+        background-color: lightblue;
+        display: flex;
+      }
+      .ff{
+        font-size: 20px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+       
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+      }
+
+      .fg{
+        
+        font-size: 20px;
+        font-family: verdana;
+        background-color: #000;
+        color: white;
+        height: 25px;
+        display: flex;
+        
+        
+      }
+      .fh{
+        font-size: 20px;
+        font-family: verdana;
+        background-color: #000;
+        color: white;
+        height: 23px;
+        margin-top: 23px;
+        margin-left: 110px;
+      }
+
+    .d{
+      width: 450px;
+      margin-left: 40px;
+      margin-bottom: 50px;
+      box-shadow: 0px 0px 3px gray;
+      border-radius: 4px;
+    }
+    .da{
+      font-size: 14px;
+      color: gray;
+      font-family: verdana;
+      padding-top: 5px;
+      padding-left: 20px;
+     
+    }
+    .db{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 13px;
+    }
+    .dpix{
+      width: 70px;
+
+    }
+    .dc{
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      object-position: left;
+      border-radius: 40px;
+    }
+    .dec{
+      flex: 1;
+      margin-left: 5px;
+    }
+    .de{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .df{
+      font-size: 18px;
+      font-family: verdana;
+      font-weight: bold;
+    }
+    .dt{
+      color: #888282;
+      font-size: 15px;
+      font-family: verdana;
+      padding-right: 10px;
+    }
+
+    .ds{
+      font-weight: bold;
+      font-size: 15px;
+      font-family: verdana;
+      margin-top: 5px;
+    }
+    .dl{
+      font-size: 15px;
+      font-family: verdana;
+      color: #8a8585;
+      margin-top: 5px;
+    }
+
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div style="background-color: lightblue; width: 200px">200px</div>
+      <div style="background-color: lightpink; width: 75px">75px</div>
+    </div>
+
+    <div class="flex">
+      <div style="background-color: lightblue; width: 50px">item 1</div>
+      <div style="background-color: lightpink; flex: 1">item 2</div>
+      <div style="background-color: lightblue; width: 200px">item 3</div>
+    </div>
+
+    <div class="flexx">
+      <div style="background-color: lightblue; width: 200px">item 1</div>
+      <div style="background-color: lightpink; width: 200px">item 2</div>
+      <div style="background-color: lightblue; width: 200px">item 3</div>
+      <div style="background-color: lightpink; width: 200px">item 4</div>
+    </div>
+
+    <div class="fflex">
+      <div style="background-color: lightblue">item 1</div>
+      <div style="background-color: lightpink">item 2</div>
+    </div>
+
+    <div class="F">
+      <div class="test">
+        <div class="name">Home</div>
+        <button class="button">14</button>
+      </div>
+      <div class="test">
+        <div class="name">Notifications</div>
+        <button class="button">3</button>
+      </div>
+      <div class="test">
+        <div class="name">Messages</div>
+        <button class="button">5</button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="I">
+      <div class="hme">Home</div>
+      <div>
+        <input class="search" type="text" placeholder="Search" />
+      </div>
+      <div>
+        <button class="buttn">Downolad</button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="whle">
+      <div>
+        <img class="pix" src="/thumbnail-1.webp" />
+      </div>
+      <div class="main">
+        <p style="font-weight: bold; color: #000">Oliver</p>
+        <p>The cat</p>
+        <p>Popular</p>
+      </div>
+      <button class="fllw">follow</button>
+    </div>
+    <div class="whle">
+      <div>
+        <img class="pix" src="/thumbnail-2.webp" />
+      </div>
+      <div class="main">
+        <p style="font-weight: bold; color: #000">Mimi</p>
+        <p>sleeping cat</p>
+        <p>Popular</p>
+      </div>
+      <button class="fllw">follow</button>
+    </div>
+    <div class="whle">
+      <div>
+        <img class="pix" src="/thumbnail-3.webp" />
+      </div>
+      <div class="main">
+        <p style="font-weight: bold; color: #000">Rex</p>
+        <p>Happy bulld</p>
+        <p>Popular</p>
+      </div>
+      <button class="fllw">follow</button>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  
+  <div class="ex">
+    <div class="Fa">
+      <div class="fc">item 1</div>
+    </div>
+    <div class="Fb"></div>
+
+  </div>
+ 
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="exx">
+    <div class="fd"></div>
+    <div class="Fe">
+      <div class="ff">rw 1
+       <div class="fg">rw 2</div> 
+      </div>
+      <div class="fh">rw 2</div>     
+      
+    </div>
+  </div>
+  
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="d">
+    <div class="da">ALL INBOXES</div>
+    <div class="db">
+      <div class="dpic">
+        <img class="dc" src="/thumbnail-2.webp">
+      </div>
+         <div class="dec">
+          <div class="de">
+            <div class="df">Chewy Promotions</div>    
+            <div class="dt">4:45PM</div>
+           </div> 
+       
+       <div class="ds"><p>Biggest deals of the year</p></div>
+       <div class="dl"><p>Hey there! we're writing to tell you about our...</p></div>
+       </div>
+  </div>
+      
+      
+       <div class="db">
+        <div class="dpic">
+          <img class="dc" src="/thumbnail-2.webp">
+        </div>
+           <div class="dec">
+            <div class="de">
+              <div class="df">Chewy Promotions</div>    
+              <div class="dt">4:45PM</div>
+             </div> 
+         
+         <div class="ds"><p>Biggest deals of the year</p></div>
+         <div class="dl"><p>Hey there! we're writing to tell you about our...</p></div>   
+         </div>
+    </div> 
+    <div class="db">
+      <div class="dpic">
+        <img class="dc" src="/thumbnail-2.webp">
+      </div>
+         <div class="dec">
+          <div class="de">
+            <div class="df">Chewy Promotions</div>    
+            <div class="dt">4:45PM</div>
+           </div> 
+       
+       <div class="ds"><p>Biggest deals of the year</p></div>
+       <div class="dl"><p>Hey there! we're writing to tell you about our...</p></div>   
+     
+  </div>  
+
+
+
+</body>
+</html>

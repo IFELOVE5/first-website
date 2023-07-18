@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUTTONS</title>
+  </head>
+  <style>
+    .A {
+      padding-left: 39px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-right: 39px;
+      color: white;
+      background-color: black;
+      font-size: 107%;
+      cursor: pointer;
+    }
+
+    .B {
+      padding-left: 2.5cm;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 2.5cm;
+      border-radius: 25px;
+      background-color: rgb(253, 230, 112);
+      font-size: 140%;
+      border: 0pt;
+      margin-left: 2cm;
+      cursor: grab;
+    }
+
+    .C {
+      padding-left: 40px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-right: 40px;
+      color: white;
+      background-color: rgb(88, 194, 118);
+      border: 0px;
+      border-radius: 7pt;
+      font-size: 140%;
+      font-weight: bold;
+      margin-left: 2cm;
+      cursor: progress;
+    }
+    .D {
+      width: 155px;
+      height: 53px;
+      color: white;
+      background-color: rgb(114, 101, 179);
+      font-size: 115%;
+      cursor: cell;
+      margin-top: 4cm;
+      border: 0px;
+      border-radius: 4pt;
+      font-weight: bold;
+    }
+    .E {
+      width: 140px;
+      height: 53px;
+      color: rgb(150, 148, 161);
+      background-color: white;
+      border: 1px;
+      border-style: solid;
+      border-color: rgb(152, 150, 160);
+      font-size: 140%;
+      margin-left: 10px;
+      border-radius: 4px;
+      margin-top: 4cm;
+      cursor: copy;
+    }
+    .F {
+      padding-left: 2cm;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 2cm;
+      border-radius: 25px;
+      background-color: rgb(18, 126, 221);
+      font-size: 160%;
+      color: white;
+      border: 0pt;
+      margin-left: 6cm;
+      cursor: grab;
+      font-weight: bold;
+    }
+
+    .G {
+      width: 120px;
+      font-size: 110%;
+      background-color: blue;
+      border-radius: 30px;
+      height: 55px;
+      color: rgb(18, 126, 221);
+      background-color: white;
+    }
+
+    .PP {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .N {
+      width: 5cm;
+      height: 40px;
+      border-radius: 25px;
+      background-color: rgb(253, 230, 112);
+      font-size: 120%;
+      border: 0pt;
+      cursor: grab;
+    }
+
+    .NB {
+      width: 4cm;
+      height: 40px;
+      border-radius: 25px;
+      background-color: rgb(243, 170, 35);
+      font-size: 120%;
+      border: 0pt;
+      cursor: grab;
+      margin-left: 1cm;
+    }
+
+    .link {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: initial;
+      color: rgb(44, 122, 240);
+    }
+
+    .link:hover {
+      color: rgba(207, 40, 28, 0.849);
+    }
+
+    .link:active {
+      color: white;
+    }
+
+    .Back {
+      padding-left: 22px;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-right: 22px;
+      background-color: ash;
+      border-style: solid;
+      border-color: rgb(17, 17, 17);
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 150%;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: background-color 1s;
+    }
+    .Back:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    .next {
+      font-size: 150%;
+      margin-left: 20px;
+      vertical-align: auto;
+    }
+
+    .stretch {
+      padding-left: 25px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 25px;
+      background-color: rgb(4, 96, 4);
+      border-style: none;
+      color: white;
+      font-size: 150%;
+      cursor: pointer;
+      margin-left: 20px;
+      transition-duration: 1s;
+    }
+
+    .stretch:hover {
+      padding-left: 30px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-right: 30px;
+      background-color: rgb(107, 200, 107);
+      border-style: none;
+      font-size: 180%;
+    }
+
+    .shadow {
+      padding-left: 25px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 25px;
+      background-color: rgb(4, 96, 4);
+      border-style: none;
+      color: white;
+      font-size: 180%;
+      cursor: pointer;
+      margin-left: 20px;
+      transition-duration: 9ms;
+      box-shadow: 3px 3px 5px rgb(5, 5, 5);
+    }
+
+    .shadow:active {
+      box-shadow: none;
+    }
+  </style>
+  <body>
+    <button class="A">Request now</button>
+    <button class="B">Add to Cart</button>
+    <button class="C">Sign up</button>
+
+    <p>
+      <button class="D">Get started</button>
+      <button class="E">Download</button>
+      <button class="F">Apply on company website</button>
+      <button class="G">Save</button>
+    </p>
+    <br />
+    <br />
+    <br />
+
+    <p>
+      <a class="link" href="http://amazon.com" target="_blank"
+        >Back to Amazon</a
+      >
+    </p>
+    <p class="PP">Nike Black Running Shoes</p>
+
+    <p style="color: rgb(13, 141, 62); font-size: 25px; font-weight: bold">
+      &dollar;39 &ndash; in stock&period;
+    </p>
+    <p style="color: black; font-size: 20px; font-weight: bold">
+      Free delivery tomorrow.
+    </p>
+    <button class="N">Add to Cart</button>
+    <button class="NB">Buy now</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <button class="Back">Back</button>
+
+    <a class="next" href="http://www.nextpage.com">1</a>
+    <a class="next" href="http://www.nextpage.com">2</a>
+    <a class="next" href="http://www.nextpage.com">3</a>
+    <a class="next" href="http://www.nextpage.com">4</a>
+    <a class="next" href="http://www.nextpage.com">5</a>
+    <button class="Back">Next</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <button class="stretch">Stretch</button>
+    <button class="shadow">Shadow</button>
+  </body>
+</html>

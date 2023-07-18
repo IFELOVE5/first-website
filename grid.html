@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>grid css</title>
+    <style>
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .A {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        margin-top: 30px;
+        column-gap: 20px;
+      }
+      .B {
+        width: 200px;
+        box-shadow: 0px 0px 5px black;
+      }
+      .pic {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .name {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 8px;
+      }
+      .C {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+      .imgg {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 20px;
+        align-items: center;
+        margin-left: 9px;
+      }
+
+      .mutual {
+        font-size: 19px;
+        color: rgb(136, 124, 124);
+        vertical-align: middle;
+      }
+
+      .button {
+        width: 140px;
+        height: 40px;
+        color: white;
+        background-color: rgb(98, 98, 247);
+        font-size: 15px;
+        margin-left: 7px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        position: relative;
+      }
+     
+
+       .cntainer {
+        position: absolute;
+        width: 170px;
+        height: 70px;
+        bottom: -95px;
+        left: 40px;
+        padding: 5px;
+        box-shadow: 0px 0px 8px rgb(185, 179, 179);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        opacity: 0;
+        transition-property: opacity 1ms;
+        pointer-events: none;
+      }
+
+      .button:hover .cntainer{
+        opacity: 1;
+      }
+      .pics{
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
+        border-radius: 30px;
+
+      }
+      .try{
+        display: flex;
+        flex-direction: column;
+      }
+      .r {
+        font-family: arial;
+       
+        color: gray;
+        font-size: 15px;
+        padding-left: 5px;
+      }
+      .l{
+        font-family: arial;
+        font-weight: bold;
+        font-size: 15px;
+        padding-left: 5px;
+        color: #000;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <div class="A">
+      <div class="B">
+        <img class="pic" src="/thumbnail-1.webp" />
+        <p class="name">Oliver</p>
+        <div class="C">
+          <img class="imgg" src="/thumbnail-2.webp" />
+          <p class="mutual">2 mutual friends</p>
+        </div>
+        <div>
+          <button class="button">Add friend</button>
+        </div>
+      </div>
+
+      <div class="B">
+        <img class="pic" src="/thumbnail-2.webp" />
+        <p class="name">Oliver</p>
+        <div class="C">
+          <img class="imgg" src="thumbnail-1.webp" />
+          <p class="mutual">20 mutual friends</p>
+        </div>
+        <div>
+          <button class="button">Add friend</button>
+        </div>
+      </div>
+
+      <div class="B">
+        <img class="pic" src="thumbnail-3.webp" />
+        <p class="name">Oliver</p>
+        <div class="C">
+          <img class="imgg" src="thumbnail-4.webp" />
+            <p class="mutual">10 mutual friends</p>
+        </div>    
+            
+              <button class="button">Add friend
+            
+              <div class="cntainer">
+                <img class="pics" src="/thumbnail-4.webp" />
+                <div class="try"><p class="l">Oliver</p>
+                <div class="r">10 mutual friends</div>
+              </div>
+               </div>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
